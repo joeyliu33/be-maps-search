@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Tomtom API errors data
+
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        errorText:
+          type: string
+        detailedError:
+          $ref: '#/components/schemas/DetailedError'
+        httpStatusCode:
+          type: number
+      required:
+        - errorText
+        - detailedError
+        - httpStatusCode
+
+    DetailedError:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        target:
+          type: string
+      required:
+        - code
+        - message
+        - target

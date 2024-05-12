@@ -1,0 +1,52 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Tomtom API schema
+  description: Documentation for Tomtom API
+paths:
+  /search/{apiVersion}/search/{address}.json:
+    get:
+      summary: Search for a location by address
+      description: Search for a location by a given address string
+      operationId: searchAddress
+      parameters:
+        - name: apiVersion
+        in: path
+        require: true
+        description: The version of search API
+        schema:
+          type: number
+        - name: address
+        in: path
+        required: true
+        description: The address to search for
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './data.yaml#/components/schemas/SearchResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: './error.yaml#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: './error.yaml#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: './error.yaml#/components/schemas/ErrorResponse'
+
+
+

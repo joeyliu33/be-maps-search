@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Tomtom API data
+components:
+  schemas:
+    SearchResponse:
+      type: array
+      items:
+        $ref: '#/components/schemas/SearchResult'
+    SearchResult:
+      type: object
+      properties:
+        type:
+          type: string
+        id:
+          type: string
+        score:
+          type: string
+        dist:
+          type: string
+        info:
+          type: string
+        address:
+          $ref: './common.yaml#/components/schemas/Address'
+      required:
+        - type
+        - id
+        - address
