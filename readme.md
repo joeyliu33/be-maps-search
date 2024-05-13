@@ -4,6 +4,10 @@ This repository is a backend NodeJS library for users to search the full address
 
 It takes a partial address input and return full address suggestions along with the address broken into its individual components using the TomTom API.
 
+## Getting Started
+
+API key and baseUrl will be required in `.env` file. For security concern, `.env` should not be published to the public. You will need to get the API key and baseUrl from code owner.
+
 ## Install:
 
 `yarn install`
