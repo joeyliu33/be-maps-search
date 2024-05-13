@@ -1,5 +1,5 @@
 import { PlaceAutoCompleteRS } from '../../clients/tomtom-client.types';
-import { AutoCompleteDetailsRS } from './getAutoCompleteDetails.types';
+import { AutoCompleteDetailsRS } from './mapsSearch.types';
 
 export const mapResultsToCompleteDetails = (
   results: PlaceAutoCompleteRS

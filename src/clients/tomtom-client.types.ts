@@ -2,7 +2,7 @@ export type PlaceAutoCompleteRQ = {
   address: string;
 };
 
-type Address = {
+export type Address = {
   streetNumber: string;
   streetName: string;
   municipality: string;

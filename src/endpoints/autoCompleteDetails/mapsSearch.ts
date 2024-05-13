@@ -2,7 +2,7 @@ import { TomtomClientService } from '../../clients/tomtom-client';
 import {
   AutoCompleteDetailsRQ,
   AutoCompleteDetailsRS,
-} from './getAutoCompleteDetails.types';
+} from './mapsSearch.types';
 import { mapResultsToCompleteDetails } from './mapper';
 import { validateRequest, validateResults } from './validation';
 

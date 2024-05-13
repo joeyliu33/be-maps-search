@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
-import { getAutoCompleteDetails } from '../getAutoCompleteDetails';
+import { getAutoCompleteDetails } from '../mapsSearch';
 
 config();
 

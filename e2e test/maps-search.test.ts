@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import { describe } from '@jest/globals';
 import { TomtomClientService } from '../src/clients/tomtom-client';
-import { getAutoCompleteDetails } from '../src/endpoints/autoCompleteDetails/getAutoCompleteDetails';
+import { getAutoCompleteDetails } from '../src/endpoints/autoCompleteDetails/mapsSearch';
 
 config();
 

@@ -2,7 +2,7 @@ import {
   PlaceAutoCompleteRS,
   PlaceAutoCompleteResult,
 } from '../../clients/tomtom-client.types';
-import { AutoCompleteDetailsRQ } from './getAutoCompleteDetails.types';
+import { AutoCompleteDetailsRQ } from './mapsSearch.types';
 
 export const validateRequest = (
   request: AutoCompleteDetailsRQ
