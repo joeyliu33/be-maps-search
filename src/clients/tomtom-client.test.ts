@@ -22,7 +22,7 @@ describe('TomtomClientService', () => {
       const mockUrl = `https://api.tomtom.com/search/2/search/${rq.address}.json`;
       const mockParams = {
         key: 'API_KEY',
-        limit: 5,
+        limit: 2,
       };
 
       const mockData = mockPlaceAutoCompleteRS('Queen Street', ['123', '234']);
