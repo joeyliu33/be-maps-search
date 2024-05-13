@@ -7,7 +7,7 @@ jest.mock('../config/config', () => ({
     baseUrl: 'https://api.tomtom.com',
     apiKey: 'API_KEY',
     apiVersion: 2,
-    searchResultLimit: 5,
+    searchResultLimit: 2,
   }),
 }));
 
