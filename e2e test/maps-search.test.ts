@@ -5,7 +5,7 @@ import { getAutoCompleteDetails } from '../src/endpoints/autoCompleteDetails/get
 
 config();
 
-// These are end-to-end tests and need an api key
+// These are end-to-end tests
 describe('Tomtom Places E2E Tests', () => {
   describe('getAutoCompleteDetails', () => {
     it('returns a promise', () => {
